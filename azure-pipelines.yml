@@ -19,7 +19,7 @@ steps:
     azureSubscription: 'gokula-connection-cli'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az deployment group create --template-file mysql.bicep --resource-group gokula-resource-group'
+    inlineScript: 'az deployment group create --template-file createsql.bicep --resource-group gokula-resource-group'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
