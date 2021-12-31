@@ -1,6 +1,6 @@
 resource mySQLServer 'Microsoft.DBforMySQL/servers@2017-12-01' = {
   name: 'gokula-mysql-server'
-  location: 'useast'
+  location: 'eastus'
   sku: {
     name:'Standard_LRS'
     tier: 'Basic'
@@ -8,8 +8,8 @@ resource mySQLServer 'Microsoft.DBforMySQL/servers@2017-12-01' = {
   properties: {
     createMode: 'Default'
     version: '5.7'
-    administratorLogin: 'root'
-    administratorLoginPassword: 'rootroot'
+    administratorLogin: 'gokula'
+    administratorLoginPassword: 'gokularootroot'
     sslEnforcement: 'Enabled' // You should explicitly enforce encription for MySQL 5.7
     minimalTlsVersion: 'TLS1_2' // Minimal TLS version to accept for server connections
   }
