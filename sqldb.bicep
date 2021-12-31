@@ -10,7 +10,6 @@ resource sqlserver 'Microsoft.Sql/servers@2021-02-01-preview' = {
   resource sqldb 'databases' = {
     name: 'inventorydb'
     location: 'eastus'
-
   }
   tags: {
     Owner : 'gokula-krishnan'
